@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Document</title>
+
+	<style>
+
+	body{
+
+		background-color: #a6251c;
+	}	
+#con{
+	background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxgNuE3kkPwwXCpCEw78fSFjHpY_-HDlZJBA&usqp=CAU); 
+	justify-content:  center;	
+height:400px;
+width:420px;
+border:2px solid red;
+padding: 35px;
+margin: auto;
+
+}
+#sel{
+	margin-top: 22px;
+	text-align: center;
+	font-size: 23px;
+	border-radius:12px;
+	padding:2px;
+	
+}
+
+#st{
+
+	font-size: 23px;
+ 
+border-radius: 13px;
+	padding: 12px;
+	height:18px;
+	width:65px;
+ transition: 0.4s;
+ background-color: #bfd9d7;
+}
+
+#nd{
+	background-color: #bfd9d7;
+display: inline;
+	font-size: 23px;
+
+border-radius: 13px;
+	padding: 12px;
+	height:18px;
+	width:65px;
+
+}
+
+
+
+#sele{
+
+margin: auto;
+
+
+}
+#fld{
+
+	font-size: 26px;
+}
+#sld{
+font-size: 28px;	
+}
+#stdi{
+
+
+margin-left: 1px;
+    margin-top: 35px;
+
+
+
+}
+
+#ndi{
+margin-left: -23px;
+    margin-top: 65px;
+
+
+}
+
+#seldiv{
+margin-top: 22px;
+}
+
+
+#btn{
+
+background-color: #e6883c;
+	font-weight: bold;
+	font-size: 15px;
+    border-radius: 10px;
+    top: 379px;
+    margin-left:250px;
+    position: absolute;
+    width: 87px;
+    height: 32px;
+      transition: 0.3s;
+
+}
+#btn:hover{
+color:white;
+
+}
+ 
+button{
+	background-color: #2be390;
+	font-weight: bold;
+	font-size: 15px;
+    border-radius: 10px;
+    top: 379px;
+    margin-left: 78px;
+    position: absolute;
+    width: 87px;
+    height: 32px;
+      transition: 0.3s;
+}
+button:hover{
+	 color: white;
+background-color: red;
+
+}
+p{color:
+#696c70
+	font-family: 'Oswald', sans-serif;
+	font-size: 35px;
+	
+	
+}
+#oo{
+
+margin-top: -125px;
+    margin-left: 304px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+  body {
+     background-color: #a6251c;
+  }
+button{
+margin-top: -37px;
+    margin-left: 100px;
+    font-size: 11px;
+    width: 65px;
+    height: 32px;
+}
+
+#btn{
+
+    background-color: #e6883c;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 10px;
+    top: 380px;
+    margin-left: 255px;
+    position: absolute;
+    width: 60px;
+    height: 34px;
+    transition: 0.3s;
+}
+
+#con{
+background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxgNuE3kkPwwXCpCEw78fSFjHpY_-HDlZJBA&usqp=CAU); 
+border: 2px lightgreen;
+border-radius: 2px;
+height:800px;
+width:390px;
+padding: 35px;
+margin: auto;
+
+}
+#stdi{
+
+margin-left: 9px;
+    margin-top: 29px;
+
+}
+#st{
+font-size: 23px;
+    border-radius: 13px;
+    padding: 9px;
+    height: 18px;
+    width: 57px;
+    transition: 0.4s;
+    background-color: #bfd9d7;
+}
+
+#nd{
+	font-size: 23px;
+    border-radius: 13px;
+    padding: 9px;
+    height: 16px;
+    width: 57px;
+    transition: 0.4s;
+    background-color: #bfd9d7;
+
+}
+#ndi{
+margin-left: -15px;
+    margin-top: 67px;
+
+}
+#oo{
+
+margin-top: -141px;
+    margin-left: 254px;
+}
+p{color:#56585c;
+	
+	font-size: 41px;
+	
+	
+}
+}
+
+
+
+	</style>
+
+
+
+
+</head>
+<body>
+
+
+<div id="con">
+
+		
+	
+	
+
+
+
+<div id="stdi">
+	
+<label id="fld" >Birthyear</label>
+
+<input  type="num1"  id="st"required >
+</div>
+  
+
+<div id="ndi">
+	
+<label id="sld">Currentyear</label>
+<input id="nd" type="2num"required>
+</div>
+
+
+
+<p id="oo"></p>
+
+
+
+<button id="" onclick="task()">Calc Age</button>
+
+
+
+
+<button id="btn" onclick="cle()">Clear</button>
+
+</div>
+
+
+
+
+
+<script>
+	function task() {
+
+
+		let e=parseInt(document.getElementById('st').value);
+let w=parseInt(document.getElementById('nd').value);
+
+
+
+
+var ttt=0;
+for(var i=e;i<w;i++){
+
+ttt++;
+}
+
+var qq=document.getElementById('oo').innerHTML="You are<br> "+ttt+"<br>years <br>old<br>";
+
+
+console.log(ttt);
+
+
+}
+
+
+function cle(){
+window.location.reload(true);
+
+	
+}
+</script>
+
+
+	
+</body>
+</html>
